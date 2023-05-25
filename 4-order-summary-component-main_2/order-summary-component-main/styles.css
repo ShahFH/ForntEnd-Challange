@@ -1,0 +1,119 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --very-pate-blue: hsl(225,100%, 94%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Pale-blue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.bg{
+    background-image: url(Images/pattern-background-desktop.svg) no-repeat center/cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+@media (min-width: 768px){
+    .bg{
+        background: url(Images/pattern-background-mobile.svg) no-repeat center/cover;
+        height: 50vh;
+    }
+    .continar{
+        width: 500px;
+    }
+}
+
+.continar{
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+.box{
+    padding: 30px;
+}
+h1{
+    color: var(--Dark-blue);
+}
+p{
+    color: var(--Desaturated-blue);
+    padding: 20px;
+}
+
+.Text-box{
+    background: hsl(225deg 100% 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+span{
+    padding-right: 100px;
+}
+.chn-btn{
+    background: none;
+    border: none;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+.chn-btn:hover{
+    color: hsl(245deg 77% 65%);
+}
+
+.pro{
+    background: var(--Bright-blue);
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 6px 16px 0px hsl(224deg 9% 67%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pro:hover{
+    background: hsl(245deg 77% 65%);
+}
+
+.cancel-btn{
+    background: none;
+    color: var(--Desaturated-blue);
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cancel-btn:hover{
+    color: var(--Dark-blue);
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /*  paragraphs*/
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons*/
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Very-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 15px;
+    color: var(--Very-light-gray);
+    font-family: 'Lexend+Deca', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 768px){
+    body{
+        height: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.box1{
+    background: var(--Bright-orange);
+    height: 400px;
+    width: 250px;
+    border-radius: 5px 0 0 5px;
+    padding: 40px;
+}
+
+.box2{
+    background: var(--Dark-cyan);
+    height: 400px;
+    width: 250px;
+    padding: 40px;
+}
+
+
+.box3{
+    background: var(--Very-dark-cyan);
+    height: 400px;
+    width: 250px;
+    border-radius: 0 5px 5px 0;
+    padding: 40px;
+}
+
+img{
+    width: 60px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    padding: 20px 0 30px 0;
+}
+
+p{
+    color: var(--Transparent-white);
+    padding-bottom: 60px;
+}
+
+.btn1{
+    background: var(--Transparent-white);
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--Bright-orange);
+}
+
+.btn2{
+    background: var(--Transparent-white);
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--Dark-cyan);
+}
+.btn3{
+    background: var(--Transparent-white);
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--Very-dark-cyan);
+    
+}
+.btn1:hover{
+    background: none;
+    color: var(--Transparent-white);
+    
+}
+.btn2:hover{
+    background: none;
+    color: var(--Transparent-white);
+ }
+.btn3:hover{
+    background: none;
+    color: var(--Transparent-white);
+ }
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
